@@ -1,0 +1,22 @@
+{
+  "name": "Bhojon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "rebuild": "electron-rebuild -f -w sqlite3",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^12.0.2",
+    "electron-rebuild": "^2.3.5"
+  },
+  "dependencies": {
+    "knex": "^0.95.4",
+    "sqlite3": "^5.0.2"
+  }
+}

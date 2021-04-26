@@ -1,0 +1,107 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food list</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/food_list.css">
+</head>
+
+<body> 
+
+    <div class="tab">
+        <button class="tablinks active" onclick="foods(event, 'foodList')">Food list</button>
+        <button class="tablinks  " onclick="foods(event, 'foodVarient')">Food varient</button>
+        <button class="tablinks" onclick="foods(event, 'foodAvailability')">Food availability</button>
+        <button class="tablinks" onclick="foods(event, 'foodListGrp')">Food list Group</button>
+
+    </div>
+
+    <div id="foodList" class="tabcontent" style="display: block;">
+
+        <div class=" foods table-responsive">
+            <table class="table table-bordered table-hover">
+
+                <thead>
+                    <tr>
+                        <th class="foodListitems">SI</th>
+                        <th class="foodListitems">Image</th>
+                        <th class="foodListitems">Category Name</th>
+                        <th class="foodListitems">Food Name</th>
+                        <th class="foodListitems">Component</th>
+                        <th class="foodListitems">Vat</th>
+                        <th class="foodListitems">Status</th>
+
+
+                    </tr>
+                </thead>
+
+                <tbody id="datas">
+                    
+
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <div id="foodVarient" class="tabcontent">
+        <div class=" food_varients table-responsive">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th class="foodListitems">SI</th>
+                        <th class="foodListitems">Varient name</th>
+                        <th class="foodListitems">Food name</th>
+    
+                    </tr>
+                    
+                </thead>
+                <tbody id="food_varient_datas" style="font-size: 12px;">
+                
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="foodAvailability" class="tabcontent">
+        <div class=" food_availability table-responsive">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th class="foodListitems">SI</th>
+                        <th class="foodListitems">Food name</th>
+                        <th class="foodListitems">Available day</th>
+                        <th class="foodListitems">Available time</th>
+
+    
+                    </tr>
+                    
+                </thead>
+                <tbody id="food_availability_datas">
+                
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div id="foodListGrp" class="tabcontent">
+    
+        <div id="myList">
+
+        </div>
+        
+    </div>
+
+    <script src="../js/food_list.js">
+       
+
+    </script>
+
+</body>
+
+</html>

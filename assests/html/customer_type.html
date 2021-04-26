@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Type</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/customer_type.css">
+
+</head>
+<body>
+    <div class="tab">
+        <button class="tablinks active" onclick="customer(event, 'thirdPartyCustomer')">Third party  customer</button>
+        <button class="tablinks  " onclick="customer(event, 'customerType')">Customer type</button>
+       
+    </div>
+
+    <div id="thirdPartyCustomer" class="tabcontent" style="display: block;">
+        <div class="third_party_customer table-responsive">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>SI</th>
+                        <th>Company name</th>
+                        <th>Comission</th>
+                        <th>Address</th>
+
+    
+                    </tr>
+                    
+                </thead>
+                <tbody id="third_party_customer_datas">
+
+                </tbody>
+            </table>
+        </div>
+
+        
+
+    </div>
+
+    <div id="customerType" class="tabcontent">
+        <div class="customer_type  table-responsive">
+            <table class="table table-striped table-hover">
+
+                <thead id="customer_type_header" style="text-align: center;">
+                    <tr>
+                        <th>SI</th>
+                        <th>Type name</th>
+    
+                    </tr>
+                </thead>
+
+                <tbody id="customer_type_datas">
+                    
+
+
+                </tbody>
+            </table>
+        </div>
+       
+    </div>
+
+    <script src="../js/customer_Type.js">
+
+    </script>
+
+    
+</body>
+</html>

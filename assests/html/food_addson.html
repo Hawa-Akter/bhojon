@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/food_addson.css">
+</head>
+
+<body>
+    <div class="tab">
+        <button class="tablinks active" onclick="foodAddsOn(event, 'addonsList')">Addons list</button>
+        <button class="tablinks  " onclick="foodAddsOn(event, 'addonsAssignList')">Addons assign list</button>
+       
+    </div>
+
+    <div id="addonsList" class="tabcontent" style="display: block;">
+        <div class="addOns table-responsive">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th class="foodListitems">SI</th>
+                        <th class="foodListitems">Addon name</th>
+                        <th class="foodListitems">Price</th>
+                        <th class="foodListitems">Status</th>
+
+    
+                    </tr>
+                    
+                </thead>
+                <tbody id="addons_datas">
+
+                </tbody>
+            </table>
+        </div>
+
+        
+
+    </div>
+
+    <div id="addonsAssignList" class="tabcontent">
+        <div class="addonsAssign  table-responsive">
+            <table class="table table-striped table-hover">
+
+                <thead>
+                    <tr>
+                        <th class="foodListitems">SI</th>
+                       <th class="foodListitems">Add ons Name</th>
+                        <th class="foodListitems">Food Name</th>
+                      
+
+
+                    </tr>
+                </thead>
+
+                <tbody id="add_on_assign_list_datas">
+                    
+
+
+                </tbody>
+            </table>
+        </div>
+       
+    </div>
+
+    <script src="../js/food_addson.js">
+
+    </script>
+
+</body>
+
+</html>
